@@ -5,8 +5,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-
-
 @Document(collection = "products")
 public class Product {
 	
@@ -18,15 +16,13 @@ private double price;
 private Date releaseDate;
 private boolean available;
 private String imageName;
-private String imageType;
-private byte[] imageDate;
 
 public Product() {
 	
 }
 
 public Product(String id, String name, String desc, String brand, String category, double price, Date releaseDate,
-		boolean available) {
+		boolean available,String imageName) {
 	super();
 	this.id = id;
 	this.name = name;
@@ -36,6 +32,7 @@ public Product(String id, String name, String desc, String brand, String categor
 	this.price = price;
 	this.releaseDate = releaseDate;
 	this.available = available;
+	this.imageName=imageName;
 }
 
 public String getId() {
@@ -85,24 +82,6 @@ public boolean isAvailable() {
 }
 public void setAvailable(boolean available) {
 	this.available = available;
-}
-
-
-
-public String getImageType() {
-	return imageType;
-}
-
-public void setImageType(String imageType) {
-	this.imageType = imageType;
-}
-
-public byte[] getImageDate() {
-	return imageDate;
-}
-
-public void setImageDate(byte[] imageDate) {
-	this.imageDate = imageDate;
 }
 
 public String getImageName() {

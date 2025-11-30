@@ -12,7 +12,5 @@ public class ComputerHouseApplication {
 
 }
 
-
-// karandedigvijay2_db_user
-// Uf114SwSUPcYfzZI
-// mongodb+srv://karandedigvijay2_db_user:Uf114SwSUPcYfzZI@computerhousedb.n5bcosd.mongodb.net/
+//cloudinary image url for frontend 
+//https://res.cloudinary.com/dpzobapgz/image/upload/
